@@ -1,4 +1,4 @@
-[class^='icon-'], [class*=' icon-'], [class^='st-icon-'], [class*=' st-icon-'] {
+[class^='rbm-logo-icon'], [class*=' rbm-logo-icon'], [class^='stacked-rbm-logo-icon'], [class*=' stacked-rbm-logo-icon'] {
   font-family: 'rbmlogo', sans-serif !important;
   speak: none;
   font-style: normal;
@@ -10,7 +10,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-[class^='st-icon-'], [class*=' st-icon-'] {
+[class^='stacked-rbm-logo-icon'], [class*=' stacked-rbm-logo-icon'] {
   display: inline-block;
   vertical-align: top;
   white-space: nowrap;
@@ -18,7 +18,7 @@
   height: 1em;
   width: 1em; }
 
-[class^='st-icon-']:before, [class*=' st-icon-']:before, [class^="st-icon-"]:after, [class*=' st-icon-']:after, [class^='st-icon-'] span:before, [class*=' st-icon-'] span:before, [class^="st-icon-"] span:after, [class*=' st-icon-'] span:after {
+[class^='stacked-rbm-logo-icon']:before, [class*=' stacked-rbm-logo-icon']:before, [class^="stacked-rbm-logo-icon"]:after, [class*=' stacked-rbm-logo-icon']:after, [class^='stacked-rbm-logo-icon'] span:before, [class*=' stacked-rbm-logo-icon'] span:before, [class^="stacked-rbm-logo-icon"] span:after, [class*=' stacked-rbm-logo-icon'] span:after {
   display: block;
   position: absolute;
   white-space: normal;
@@ -37,50 +37,50 @@
   -webkit-transition-delay: initial, initial;
           transition-delay: initial, initial; }
 
-.icon-rbw-logo {
+.rbm-logo-icon {
   content: '\e901'; }
 
-[class^='st-icon-rbm-logo']:before, [class*=' st-icon-rbm-logo']:before {
+[class^='stacked-rbm-logo-icon']:before, [class*=' stacked-rbm-logo-icon']:before {
   color: #a4cd39; }
 
-[class^='st-icon-rbm-logo']:after, [class*=' st-icon-rbm-logo']:after, [class^='st-icon-rbm-logo'] span:after, [class*=' st-icon-rbm-logo'] span:after {
+[class^='stacked-rbm-logo-icon']:after, [class*=' stacked-rbm-logo-icon']:after, [class^='stacked-rbm-logo-icon'] span:after, [class*=' stacked-rbm-logo-icon'] span:after {
   color: #12538f; }
 
-.st-icon-rbm-logo:before {
+.stacked-rbm-logo-icon:before {
   content: '\e903'; }
 
-.st-icon-rbm-logo:after {
+.stacked-rbm-logo-icon:after {
   content: '\e902'; }
 
-.st-icon-rbm-logo:hover span:after {
+.stacked-rbm-logo-icon:hover span:after {
   content: '\e900'; }
 
-#wpadminbar [class^='icon-'], #wpadminbar [class*=' icon-'], #wpadminbar [class^='st-icon-'], #wpadminbar [class*=' st-icon-'], #wpadminbar [class^='st-icon-'] span, #wpadminbar [class*=' st-icon-'] span {
+#wpadminbar [class^='rbm-logo-icon'], #wpadminbar [class*=' rbm-logo-icon'], #wpadminbar [class^='stacked-rbm-logo-icon'], #wpadminbar [class*=' stacked-rbm-logo-icon'], #wpadminbar [class^='stacked-rbm-logo-icon'] span, #wpadminbar [class*=' stacked-rbm-logo-icon'] span {
   font: inherit;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-#wpadminbar [class^='st-icon-'], #wpadminbar [class*=' st-icon-'] {
+#wpadminbar [class^='stacked-rbm-logo-icon'], #wpadminbar [class*=' stacked-rbm-logo-icon'] {
   font-size: 1.5em;
   line-height: 1.4; }
 
-#wpadminbar [class^='st-icon-'], #wpadminbar [class*=' st-icon-'], #wpadminbar [class^='st-icon-'] span, #wpadminbar [class*=' st-icon-'] span {
+#wpadminbar [class^='stacked-rbm-logo-icon'], #wpadminbar [class*=' stacked-rbm-logo-icon'], #wpadminbar [class^='stacked-rbm-logo-icon'] span, #wpadminbar [class*=' stacked-rbm-logo-icon'] span {
   height: 2em;
   width: 1.5em; }
 
-#wpadminbar a.ab-item [class^='st-icon-rbm-logo']:before, #wpadminbar a.ab-item [class*=' st-icon-rbm-logo']:before {
+#wpadminbar a.ab-item [class^='stacked-rbm-logo-icon']:before, #wpadminbar a.ab-item [class*=' stacked-rbm-logo-icon']:before {
   color: #a0a5aa; }
 
-#wpadminbar a.ab-item [class^='st-icon-rbm-logo']:after, #wpadminbar a.ab-item [class*=' st-icon-rbm-logo']:after, #wpadminbar a.ab-item [class^='st-icon-rbm-logo'] span:after, #wpadminbar a.ab-item [class*=' st-icon-rbm-logo'] span:after {
+#wpadminbar a.ab-item [class^='stacked-rbm-logo-icon']:after, #wpadminbar a.ab-item [class*=' stacked-rbm-logo-icon']:after, #wpadminbar a.ab-item [class^='stacked-rbm-logo-icon'] span:after, #wpadminbar a.ab-item [class*=' stacked-rbm-logo-icon'] span:after {
   color: #a0a5aa; }
 
-#wpadminbar a.ab-item:hover [class^='st-icon-rbm-logo']:before, #wpadminbar a.ab-item:hover [class*=' st-icon-rbm-logo']:before {
+#wpadminbar a.ab-item:hover [class^='stacked-rbm-logo-icon']:before, #wpadminbar a.ab-item:hover [class*=' stacked-rbm-logo-icon']:before {
   color: #a4cd39; }
 
-#wpadminbar a.ab-item:hover [class^='st-icon-rbm-logo']:after, #wpadminbar a.ab-item:hover [class*=' st-icon-rbm-logo']:after, #wpadminbar a.ab-item:hover [class^='st-icon-rbm-logo'] span:after, #wpadminbar a.ab-item:hover [class*=' st-icon-rbm-logo'] span:after {
+#wpadminbar a.ab-item:hover [class^='stacked-rbm-logo-icon']:after, #wpadminbar a.ab-item:hover [class*=' stacked-rbm-logo-icon']:after, #wpadminbar a.ab-item:hover [class^='stacked-rbm-logo-icon'] span:after, #wpadminbar a.ab-item:hover [class*=' stacked-rbm-logo-icon'] span:after {
   color: #12538f;
   text-shadow: -0.5px 0 #ccc, 0 0.5px #ccc, 0.5px 0 #ccc, 0 -0.5px #ccc; }
 
-#wpadminbar a.ab-item:hover .st-icon-rbm-logo span:after {
+#wpadminbar a.ab-item:hover .stacked-rbm-logo-icon span:after {
   content: '\e900'; }
 /*# sourceMappingURL=style.css.map */

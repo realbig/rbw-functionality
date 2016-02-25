@@ -39,7 +39,7 @@ function add_rbm_admin_bar_item( $wp_admin_bar ) {
     $wp_admin_bar->add_menu( array(
         // Non-semantic inner <span> is for the blurred bulb overlay
         'id' => 'rbm-logo',
-        'title' => '<span class="st-icon-rbm-logo"><span></span></span>' . __( 'Real Big Marketing' ),
+        'title' => '<span class="stacked-rbm-logo-icon"><span></span></span>' . __( 'Real Big Marketing' ),
         'href' => 'http://realbigmarketing.com/'
     ) );
     

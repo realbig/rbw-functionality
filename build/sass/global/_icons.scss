@@ -38,19 +38,19 @@
     transition-delay: initial, initial;
 }
 
-[class^='icon-'], [class*=' icon-'], [class^='st-icon-'], [class*=' st-icon-'] {
+[class^='rbm-logo-icon'], [class*=' rbm-logo-icon'], [class^='stacked-rbm-logo-icon'], [class*=' stacked-rbm-logo-icon'] {
     @include icon;
 }
 
-[class^='st-icon-'], [class*=' st-icon-'] {
+[class^='stacked-rbm-logo-icon'], [class*=' stacked-rbm-logo-icon'] {
     @include stacked-icon;
 }
 
-[class^='st-icon-']:before, [class*=' st-icon-']:before, [class^="st-icon-"]:after, [class*=' st-icon-']:after, [class^='st-icon-'] span:before, [class*=' st-icon-'] span:before, [class^="st-icon-"] span:after, [class*=' st-icon-'] span:after {
+[class^='stacked-rbm-logo-icon']:before, [class*=' stacked-rbm-logo-icon']:before, [class^="stacked-rbm-logo-icon"]:after, [class*=' stacked-rbm-logo-icon']:after, [class^='stacked-rbm-logo-icon'] span:before, [class*=' stacked-rbm-logo-icon'] span:before, [class^="stacked-rbm-logo-icon"] span:after, [class*=' stacked-rbm-logo-icon'] span:after {
     @include stacked-icon-before-after;
 }
 
-.icon-rbw-logo { // Single color, no blurred bulb
+.rbm-logo-icon { // Single color, no blurred bulb
     content: '\e901';
 }
 
@@ -59,23 +59,23 @@
 $gear: #a4cd39;
 $bulb: #12538f;
 
-[class^='st-icon-rbm-logo']:before, [class*=' st-icon-rbm-logo']:before {
+[class^='stacked-rbm-logo-icon']:before, [class*=' stacked-rbm-logo-icon']:before {
     color: $gear;
 }
 
-[class^='st-icon-rbm-logo']:after, [class*=' st-icon-rbm-logo']:after, [class^='st-icon-rbm-logo'] span:after, [class*=' st-icon-rbm-logo'] span:after {
+[class^='stacked-rbm-logo-icon']:after, [class*=' stacked-rbm-logo-icon']:after, [class^='stacked-rbm-logo-icon'] span:after, [class*=' stacked-rbm-logo-icon'] span:after {
     color: $bulb;
 }
 
-.st-icon-rbm-logo:before { // Gear
+.stacked-rbm-logo-icon:before { // Gear
     content: '\e903';
 }
 
-.st-icon-rbm-logo:after { // Bulb
+.stacked-rbm-logo-icon:after { // Bulb
     content: '\e902';
 }
 
-.st-icon-rbm-logo:hover span:after { // Bulb Blur is only shown on hover
+.stacked-rbm-logo-icon:hover span:after { // Bulb Blur is only shown on hover
     content: '\e900';
 }
 
@@ -83,7 +83,7 @@ $bulb: #12538f;
     
     // Override pesky WP defaults
     
-    [class^='icon-'], [class*=' icon-'], [class^='st-icon-'], [class*=' st-icon-'], [class^='st-icon-'] span, [class*=' st-icon-'] span {
+    [class^='rbm-logo-icon'], [class*=' rbm-logo-icon'], [class^='stacked-rbm-logo-icon'], [class*=' stacked-rbm-logo-icon'], [class^='stacked-rbm-logo-icon'] span, [class*=' stacked-rbm-logo-icon'] span {
         
         font: inherit;
         -webkit-font-smoothing: antialiased;
@@ -91,14 +91,14 @@ $bulb: #12538f;
         
     }
     
-    [class^='st-icon-'], [class*=' st-icon-'] {
+    [class^='stacked-rbm-logo-icon'], [class*=' stacked-rbm-logo-icon'] {
         // Apply just to top layer to change size and line-height.
         // Applying `inherit` above to undo the WP defaults also overwrote these
         font-size: 1.5em;
         line-height: 1.4;
     }
     
-    [class^='st-icon-'], [class*=' st-icon-'], [class^='st-icon-'] span, [class*=' st-icon-'] span {
+    [class^='stacked-rbm-logo-icon'], [class*=' stacked-rbm-logo-icon'], [class^='stacked-rbm-logo-icon'] span, [class*=' stacked-rbm-logo-icon'] span {
         // Change amount of space it "takes up"
         height: 2em;
         width: 1.5em;
@@ -106,28 +106,28 @@ $bulb: #12538f;
     
     a.ab-item {
         
-        [class^='st-icon-rbm-logo']:before, [class*=' st-icon-rbm-logo']:before {
+        [class^='stacked-rbm-logo-icon']:before, [class*=' stacked-rbm-logo-icon']:before {
             color: #a0a5aa;
         }
 
-        [class^='st-icon-rbm-logo']:after, [class*=' st-icon-rbm-logo']:after, [class^='st-icon-rbm-logo'] span:after, [class*=' st-icon-rbm-logo'] span:after {
+        [class^='stacked-rbm-logo-icon']:after, [class*=' stacked-rbm-logo-icon']:after, [class^='stacked-rbm-logo-icon'] span:after, [class*=' stacked-rbm-logo-icon'] span:after {
             color: #a0a5aa;
         }
         
         &:hover {
             // Colorize the logo on hover
             
-            [class^='st-icon-rbm-logo']:before, [class*=' st-icon-rbm-logo']:before {
+            [class^='stacked-rbm-logo-icon']:before, [class*=' stacked-rbm-logo-icon']:before {
                 color: $gear;
             }
 
-            [class^='st-icon-rbm-logo']:after, [class*=' st-icon-rbm-logo']:after, [class^='st-icon-rbm-logo'] span:after, [class*=' st-icon-rbm-logo'] span:after {
+            [class^='stacked-rbm-logo-icon']:after, [class*=' stacked-rbm-logo-icon']:after, [class^='stacked-rbm-logo-icon'] span:after, [class*=' stacked-rbm-logo-icon'] span:after {
                 color: $bulb;
                 // Slight outline on the bulb to help visibility against the WP Admin Bar
                 text-shadow: -0.5px 0 #ccc, 0 0.5px #ccc, 0.5px 0 #ccc, 0 -0.5px #ccc;
             }
             
-            .st-icon-rbm-logo span:after { // Bulb Blur is shown when the anchor is hovered over
+            .stacked-rbm-logo-icon span:after { // Bulb Blur is shown when the anchor is hovered over
                 content: '\e900';
             }
             
