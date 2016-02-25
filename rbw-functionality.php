@@ -15,15 +15,24 @@ else {
 	define( 'RBW_PLUGIN_URL', content_url( '/mu-plugins/rbw-functionality' ) );
 }
 
+add_action( 'init', 'rbw_register_scripts' );
+function rbw_register_scripts() {
+    
+    wp_register_style( 'rbw-login-styles', RBW_PLUGIN_URL . '/css/login.css' );
+    wp_register_style( 'rbw-global-styles', RBW_PLUGIN_URL . '/css/style.css' );
+    
+}
+
 /*-------------------------------
 Login CSS
 -------------------------------*/
-add_action( 'login_enqueue_scripts', 'rbw_admin_css' );
-function rbw_admin_css() {
+add_action( 'login_enqueue_scripts', 'rbw_login_css' );
+function rbw_login_css() {
     
-    wp_enqueue_style( 'global-rbw-styles', RBW_PLUGIN_URL . '/css/login.css' );
+    wp_enqueue_style( 'rbw-login-styles' );
     
 }
+
 /*-------------------------------
 Change footer text
 -------------------------------*/
@@ -56,9 +65,9 @@ function remove_wp_logo_admin_bar( $wp_admin_bar ) {
 }
 
 // This needs to also be hooked into the frontend to ensure the Logo shows to logged in Users on the Frontend as well
-add_action( 'wp_enqueue_scripts', 'global_rbw_admin_styles' );
-add_action( 'admin_enqueue_scripts', 'global_rbw_admin_styles' );
-function global_rbw_admin_styles() {
+add_action( 'wp_enqueue_scripts', 'rbw_global_styles' );
+add_action( 'admin_enqueue_scripts', 'rbw_global_styles' );
+function rbw_global_styles() {
     ?>
     <style type="text/css">
         @font-face {
@@ -73,7 +82,7 @@ function global_rbw_admin_styles() {
         }
     </style>
     <?php
-    wp_enqueue_style( 'global-rbw-styles', RBW_PLUGIN_URL . '/css/style.css' );
+    wp_enqueue_style( 'rbw-global-styles' );
     
 }
 
