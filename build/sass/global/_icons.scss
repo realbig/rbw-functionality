@@ -1,0 +1,138 @@
+@mixin icon {
+    font-family: 'icomoon', sans-serif !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin stacked-icon {
+    display: inline-block;
+    vertical-align: top;
+    white-space: nowrap;
+    position: relative !important;
+    height: 1em;
+    width: 1em;
+}
+
+@mixin stacked-icon-before-after {
+    display: block;
+    position: absolute;
+    white-space: normal;
+    top: 0.143em;
+    left: 0.143em;
+    text-indent: 0;
+    speak: none;
+    
+    // Transitions
+    transition: all 0.25s ease-in-out, all 0.25s ease-in-out;
+    transition-property: all, all;
+    transition-duration: 0.25s, 0.25s;
+    transition-timing-function: ease-in-out, ease-in-out;
+    transition-delay: initial, initial;
+}
+
+[class^='icon-'], [class*=' icon-'], [class^='st-icon-'], [class*=' st-icon-'] {
+    @include icon;
+}
+
+[class^='st-icon-'], [class*=' st-icon-'] {
+    @include stacked-icon;
+}
+
+[class^='st-icon-']:before, [class*=' st-icon-']:before, [class^="st-icon-"]:after, [class*=' st-icon-']:after, [class^='st-icon-'] span:before, [class*=' st-icon-'] span:before, [class^="st-icon-"] span:after, [class*=' st-icon-'] span:after {
+    @include stacked-icon-before-after;
+}
+
+.icon-rbw-logo { // Single color, no blurred bulb
+    content: '\e901';
+}
+
+// Stacked Icons for Multi-Color
+
+$gear: #a4cd39;
+$bulb: #12538f;
+
+[class^='st-icon-rbm-logo']:before, [class*=' st-icon-rbm-logo']:before {
+    color: $gear;
+}
+
+[class^='st-icon-rbm-logo']:after, [class*=' st-icon-rbm-logo']:after, [class^='st-icon-rbm-logo'] span:after, [class*=' st-icon-rbm-logo'] span:after {
+    color: $bulb;
+}
+
+.st-icon-rbm-logo:before { // Gear
+    content: '\e903';
+}
+
+.st-icon-rbm-logo:after { // Bulb
+    content: '\e902';
+}
+
+.st-icon-rbm-logo:hover span:after { // Bulb Blur is only shown on hover
+    content: '\e900';
+}
+
+#wpadminbar {
+    
+    // Override pesky WP defaults
+    
+    [class^='icon-'], [class*=' icon-'], [class^='st-icon-'], [class*=' st-icon-'], [class^='st-icon-'] span, [class*=' st-icon-'] span {
+        
+        font: inherit;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        
+    }
+    
+    [class^='st-icon-'], [class*=' st-icon-'] {
+        // Apply just to top layer to change size and line-height.
+        // Applying `inherit` above to undo the WP defaults also overwrote these
+        font-size: 1.5em;
+        line-height: 1.4;
+    }
+    
+    [class^='st-icon-'], [class*=' st-icon-'], [class^='st-icon-'] span, [class*=' st-icon-'] span {
+        // Change amount of space it "takes up"
+        height: 2em;
+        width: 1.5em;
+    }
+    
+    a.ab-item {
+        
+        [class^='st-icon-rbm-logo']:before, [class*=' st-icon-rbm-logo']:before {
+            color: #a0a5aa;
+        }
+
+        [class^='st-icon-rbm-logo']:after, [class*=' st-icon-rbm-logo']:after, [class^='st-icon-rbm-logo'] span:after, [class*=' st-icon-rbm-logo'] span:after {
+            color: #a0a5aa;
+        }
+        
+        &:hover {
+            // Colorize the logo on hover
+            
+            [class^='st-icon-rbm-logo']:before, [class*=' st-icon-rbm-logo']:before {
+                color: $gear;
+            }
+
+            [class^='st-icon-rbm-logo']:after, [class*=' st-icon-rbm-logo']:after, [class^='st-icon-rbm-logo'] span:after, [class*=' st-icon-rbm-logo'] span:after {
+                color: $bulb;
+                // Slight outline on the bulb to help visibility against the WP Admin Bar
+                text-shadow: -0.5px 0 #ccc, 0 0.5px #ccc, 0.5px 0 #ccc, 0 -0.5px #ccc;
+            }
+            
+            .st-icon-rbm-logo span:after { // Bulb Blur is shown when the anchor is hovered over
+                content: '\e900';
+            }
+            
+        }
+        
+    }
+    
+}

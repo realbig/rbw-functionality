@@ -7,67 +7,74 @@ Version: 1.0
 Author URI: http://realbigmarketing.com
 */
 
+// We don't have access to some nicer ways of including local files, so this makes our lives easier
+if ( is_multisite() ) {
+	define( 'RBW_PLUGIN_URL', network_site_url( '/wp-content/mu-plugins/rbw-functionality' ) );
+} 
+else {
+	define( 'RBW_PLUGIN_URL', content_url( '/mu-plugins/rbw-functionality' ) );
+}
+
 /*-------------------------------
 Login CSS
 -------------------------------*/
-function rbw_admin_css() { ?>
-	<style type="text/css">
-#login {
-width: 650px;
-}
-.message {
-display: none;
-}
-.login form {
-width: 250px;
-float: right;
-border-radius: 25px;
-}
-.login h1 a {
-width: 340px;
-float: left;
-padding-bottom: 110px;
-}
-.login #nav a, .login #backtoblog a {
-font-weight: bold;
-background: #064374;
-text-shadow: rgba(0, 0, 0, 0.3) 0 -1px 0;
-padding: 7px;
-border-radius: 12px;
-text-decoration: none;
-color: white;
-}
-.login #backtoblog a {
-color: white;
-}
-.login #nav a:hover, .login #backtoblog a:hover {
-color: #B32A2A!important;
-}
-.login .button-primary {
-font-size: 20px!important;
-line-height: 24px;
-padding: 7px 10px;
-float: right;
-width: 230px;
-margin: 5px 0 0 0;
-background: #064374;
-}
-body.login {
-background: #302F2F;
-}
-body.login div#login h1 a {
-    background-image: url(http://realbigmarketing.com/files/2013/04/Blue-Green-Logo.png);
-    background-size: 59%;
-    padding-bottom: 30px;
-}
-	</style>
-<?php }
 add_action( 'login_enqueue_scripts', 'rbw_admin_css' );
+function rbw_admin_css() {
+    
+    wp_enqueue_style( 'global-rbw-styles', RBW_PLUGIN_URL . '/css/login.css' );
+    
+}
 /*-------------------------------
 Change footer text
 -------------------------------*/
+add_filter( 'admin_footer_text', 'rbw_footer_admin' );
 function rbw_footer_admin () {
-echo 'Powered by <a href="http://www.wordpress.org">WordPress</a> | Designed and managed by <a href="http://realbigmarketing.com/?utm_source=RBWadmin-footer&utm_medium=footer-link&utm_campaign=RBWdashboard">Real Big Marketing</a></p>';
+    echo 'Powered by <a href="http://www.wordpress.org">WordPress</a> | Designed and managed by <a href="http://realbigmarketing.com/?utm_source=RBWadmin-footer&utm_medium=footer-link&utm_campaign=RBWdashboard">Real Big Marketing</a></p>';
 }
-add_filter('admin_footer_text', 'rbw_footer_admin');
+
+// This hooks in ASAP to place it first in the List
+add_action( 'admin_bar_menu', 'add_rbm_admin_bar_item' );
+function add_rbm_admin_bar_item( $wp_admin_bar ) {
+     
+    $wp_admin_bar->add_menu( array(
+        // Non-semantic inner <span> is for the blurred bulb overlay
+        'id' => 'rbm-logo',
+        'title' => '<span class="st-icon-rbm-logo"><span></span></span>' . __( 'Real Big Marketing' ),
+        'href' => 'http://realbigmarketing.com/'
+    ) );
+    
+}
+
+// This needs to be hooked in later to insure that the WP Logo has been included by Core
+// At Priority 50 both wp-logo and updates have been added
+add_action( 'admin_bar_menu', 'remove_wp_logo_admin_bar', 51 );
+function remove_wp_logo_admin_bar( $wp_admin_bar ) {
+    
+    $wp_admin_bar->remove_menu( 'wp-logo' );
+    $wp_admin_bar->remove_menu( 'updates' );
+    
+}
+
+// This needs to also be hooked into the frontend to ensure the Logo shows to logged in Users on the Frontend as well
+add_action( 'wp_enqueue_scripts', 'global_rbw_admin_styles' );
+add_action( 'admin_enqueue_scripts', 'global_rbw_admin_styles' );
+function global_rbw_admin_styles() {
+    ?>
+    <style type="text/css">
+        @font-face {
+            font-family: 'icomoon';
+            src:url( <?php echo RBW_PLUGIN_URL . '/fonts/icons/rbm-logo.eot?xowa0l'; ?> );
+            src:url( <?php echo RBW_PLUGIN_URL . '/fonts/icons/rbm-logo.eot#iefix'; ?> ) format('embedded-opentype'),
+            url( <?php echo RBW_PLUGIN_URL . '/fonts/icons/rbm-logo.woff?xowa0l'; ?> ) format('woff'),
+            url( <?php echo RBW_PLUGIN_URL . '/fonts/icons/rbm-logo.ttf?xowa0l'; ?> ) format('truetype'),
+            url( <?php echo RBW_PLUGIN_URL . '/fonts/icons/rbm-logo.svg?xowa0l#icomoon'; ?> ) format('svg');
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+    <?php
+    wp_enqueue_style( 'global-rbw-styles', RBW_PLUGIN_URL . '/css/style.css' );
+    
+}
+
 ?>

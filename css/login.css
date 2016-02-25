@@ -1,0 +1,45 @@
+body.login {
+  background: #302F2F; }
+  body.login .message {
+    display: none; }
+  body.login form {
+    width: 250px;
+    float: right;
+    border-radius: 25px; }
+  body.login h1 a {
+    width: 340px;
+    float: left;
+    padding-bottom: 110px; }
+  body.login #nav a {
+    font-weight: bold;
+    background: #064374;
+    text-shadow: rgba(0, 0, 0, 0.3) 0 -1px 0;
+    padding: 7px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: white; }
+  body.login #nav a:hover, body.login #nav .login #backtoblog a:hover {
+    color: #B32A2A !important; }
+  body.login div#login {
+    width: 650px; }
+    body.login div#login #backtoblog a {
+      font-weight: bold;
+      background: #064374;
+      text-shadow: rgba(0, 0, 0, 0.3) 0 -1px 0;
+      padding: 7px;
+      border-radius: 12px;
+      text-decoration: none;
+      color: white; }
+    body.login div#login h1 a {
+      background-image: url(http://realbigmarketing.com/files/2013/04/Blue-Green-Logo.png);
+      background-size: 59%;
+      padding-bottom: 30px; }
+  body.login .button-primary {
+    font-size: 20px !important;
+    line-height: 24px;
+    padding: 7px 10px;
+    float: right;
+    width: 230px;
+    margin: 5px 0 0 0;
+    background: #064374; }
+/*# sourceMappingURL=login.css.map */

@@ -1,0 +1,70 @@
+@mixin login_action_button {
+    // Used for the action buttons to the left
+    font-weight: bold;
+    background: #064374;
+    text-shadow: rgba(0, 0, 0, 0.3) 0 -1px 0;
+    padding: 7px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: white;
+}
+
+body.login {
+    
+    background: #302F2F;
+    
+    .message {
+        display: none;
+    }
+    
+    form {
+        width: 250px;
+        float: right;
+        border-radius: 25px;
+    }
+    
+    h1 a {
+        width: 340px;
+        float: left;
+        padding-bottom: 110px;
+    }
+    
+    #nav {
+        
+        a {
+            @include login_action_button;
+        }
+        
+        a:hover, .login #backtoblog a:hover {
+            color: #B32A2A!important;
+        }
+        
+    }
+    
+    div#login {
+        
+        width: 650px;
+        
+        #backtoblog a {
+            @include login_action_button;
+        }
+        
+        h1 a {
+            background-image: url(http://realbigmarketing.com/files/2013/04/Blue-Green-Logo.png);
+            background-size: 59%;
+            padding-bottom: 30px;
+        }
+        
+    }
+    
+    .button-primary {
+        font-size: 20px !important;
+        line-height: 24px;
+        padding: 7px 10px;
+        float: right;
+        width: 230px;
+        margin: 5px 0 0 0;
+        background: #064374;
+    }
+    
+}
