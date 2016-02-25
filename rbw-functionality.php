@@ -62,12 +62,12 @@ function global_rbw_admin_styles() {
     ?>
     <style type="text/css">
         @font-face {
-            font-family: 'icomoon';
-            src:url( <?php echo RBW_PLUGIN_URL . '/fonts/icons/rbm-logo.eot?xowa0l'; ?> );
-            src:url( <?php echo RBW_PLUGIN_URL . '/fonts/icons/rbm-logo.eot#iefix'; ?> ) format('embedded-opentype'),
-            url( <?php echo RBW_PLUGIN_URL . '/fonts/icons/rbm-logo.woff?xowa0l'; ?> ) format('woff'),
-            url( <?php echo RBW_PLUGIN_URL . '/fonts/icons/rbm-logo.ttf?xowa0l'; ?> ) format('truetype'),
-            url( <?php echo RBW_PLUGIN_URL . '/fonts/icons/rbm-logo.svg?xowa0l#icomoon'; ?> ) format('svg');
+            font-family: 'rbmlogo';
+            src:url( <?php echo RBW_PLUGIN_URL . '/fonts/icons/rbm-logo.eot?1g7jui'; ?> );
+            src:url( <?php echo RBW_PLUGIN_URL . '/fonts/icons/rbm-logo.eot?1g7jui#iefix'; ?> ) format('embedded-opentype'),
+            url( <?php echo RBW_PLUGIN_URL . '/fonts/icons/rbm-logo.woff?1g7jui'; ?> ) format('woff'),
+            url( <?php echo RBW_PLUGIN_URL . '/fonts/icons/rbm-logo.ttf?1g7jui'; ?> ) format('truetype'),
+            url( <?php echo RBW_PLUGIN_URL . '/fonts/icons/rbm-logo.svg?1g7jui#rbm-logo'; ?> ) format('svg');
             font-weight: normal;
             font-style: normal;
         }
