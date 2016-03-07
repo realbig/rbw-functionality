@@ -106,6 +106,7 @@ $bulb: #12538f;
     
     a.ab-item {
         
+        // This is catch-all styling for the Admin Bar on the Frontend and for the Default Theme
         [class^='stacked-rbm-logo-icon']:before, [class*=' stacked-rbm-logo-icon']:before {
             color: #a0a5aa;
         }
@@ -118,11 +119,11 @@ $bulb: #12538f;
             // Colorize the logo on hover
             
             [class^='stacked-rbm-logo-icon']:before, [class*=' stacked-rbm-logo-icon']:before {
-                color: $gear;
+                color: $gear !important;
             }
 
             [class^='stacked-rbm-logo-icon']:after, [class*=' stacked-rbm-logo-icon']:after, [class^='stacked-rbm-logo-icon'] span:after, [class*=' stacked-rbm-logo-icon'] span:after {
-                color: $bulb;
+                color: $bulb !important;
                 // Slight outline on the bulb to help visibility against the WP Admin Bar
                 text-shadow: -0.5px 0 #ccc, 0 0.5px #ccc, 0.5px 0 #ccc, 0 -0.5px #ccc;
             }
@@ -135,4 +136,118 @@ $bulb: #12538f;
         
     }
     
+}
+
+// We have to define the non-hover colors of the icons per-theme. It is ridiculous.
+
+.admin-color-light {
+    #wpadminbar {
+        a.ab-item {
+            
+            [class^='stacked-rbm-logo-icon']:before, [class*=' stacked-rbm-logo-icon']:before {
+                color: #999;
+            }
+
+            [class^='stacked-rbm-logo-icon']:after, [class*=' stacked-rbm-logo-icon']:after, [class^='stacked-rbm-logo-icon'] span:after, [class*=' stacked-rbm-logo-icon'] span:after {
+                color: #999;
+            }
+            
+        }
+    }
+}
+
+.admin-color-blue {
+    #wpadminbar {
+        a.ab-item {
+            
+            [class^='stacked-rbm-logo-icon']:before, [class*=' stacked-rbm-logo-icon']:before {
+                color: #e5f8ff;
+            }
+
+            [class^='stacked-rbm-logo-icon']:after, [class*=' stacked-rbm-logo-icon']:after, [class^='stacked-rbm-logo-icon'] span:after, [class*=' stacked-rbm-logo-icon'] span:after {
+                color: #e5f8ff;
+            }
+            
+        }
+    }
+}
+
+.admin-color-coffee {
+    #wpadminbar {
+        a.ab-item {
+            
+            [class^='stacked-rbm-logo-icon']:before, [class*=' stacked-rbm-logo-icon']:before {
+                color: #f3f2f1;
+            }
+
+            [class^='stacked-rbm-logo-icon']:after, [class*=' stacked-rbm-logo-icon']:after, [class^='stacked-rbm-logo-icon'] span:after, [class*=' stacked-rbm-logo-icon'] span:after {
+                color: #f3f2f1;
+            }
+            
+        }
+    }
+}
+
+.admin-color-ectoplasm {
+    #wpadminbar {
+        a.ab-item {
+            
+            [class^='stacked-rbm-logo-icon']:before, [class*=' stacked-rbm-logo-icon']:before {
+                color: #ece6f6;
+            }
+
+            [class^='stacked-rbm-logo-icon']:after, [class*=' stacked-rbm-logo-icon']:after, [class^='stacked-rbm-logo-icon'] span:after, [class*=' stacked-rbm-logo-icon'] span:after {
+                color: #ece6f6;
+            }
+            
+        }
+    }
+}
+
+.admin-color-midnight {
+    #wpadminbar {
+        a.ab-item {
+            
+            [class^='stacked-rbm-logo-icon']:before, [class*=' stacked-rbm-logo-icon']:before {
+                color: #f1f2f3;
+            }
+
+            [class^='stacked-rbm-logo-icon']:after, [class*=' stacked-rbm-logo-icon']:after, [class^='stacked-rbm-logo-icon'] span:after, [class*=' stacked-rbm-logo-icon'] span:after {
+                color: #f1f2f3;
+            }
+            
+        }
+    }
+}
+
+.admin-color-ocean {
+    #wpadminbar {
+        a.ab-item {
+            
+            [class^='stacked-rbm-logo-icon']:before, [class*=' stacked-rbm-logo-icon']:before {
+                color: #f2fcff;
+            }
+
+            [class^='stacked-rbm-logo-icon']:after, [class*=' stacked-rbm-logo-icon']:after, [class^='stacked-rbm-logo-icon'] span:after, [class*=' stacked-rbm-logo-icon'] span:after {
+                color: #f2fcff;
+            }
+            
+        }
+    }
+}
+
+.admin-color-sunrise {
+    #wpadminbar {
+        a.ab-item {
+            
+            [class^='stacked-rbm-logo-icon']:before, [class*=' stacked-rbm-logo-icon']:before {
+                color: #f3f1f1;
+            }
+
+            [class^='stacked-rbm-logo-icon']:after, [class*=' stacked-rbm-logo-icon']:after, [class^='stacked-rbm-logo-icon'] span:after, [class*=' stacked-rbm-logo-icon'] span:after {
+                color: #f3f1f1;
+            }
+            
+        }
+    }
 }

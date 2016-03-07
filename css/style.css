@@ -75,12 +75,54 @@
   color: #a0a5aa; }
 
 #wpadminbar a.ab-item:hover [class^='stacked-rbm-logo-icon']:before, #wpadminbar a.ab-item:hover [class*=' stacked-rbm-logo-icon']:before {
-  color: #a4cd39; }
+  color: #a4cd39 !important; }
 
 #wpadminbar a.ab-item:hover [class^='stacked-rbm-logo-icon']:after, #wpadminbar a.ab-item:hover [class*=' stacked-rbm-logo-icon']:after, #wpadminbar a.ab-item:hover [class^='stacked-rbm-logo-icon'] span:after, #wpadminbar a.ab-item:hover [class*=' stacked-rbm-logo-icon'] span:after {
-  color: #12538f;
+  color: #12538f !important;
   text-shadow: -0.5px 0 #ccc, 0 0.5px #ccc, 0.5px 0 #ccc, 0 -0.5px #ccc; }
 
 #wpadminbar a.ab-item:hover .stacked-rbm-logo-icon span:after {
   content: '\e900'; }
+
+.admin-color-light #wpadminbar a.ab-item [class^='stacked-rbm-logo-icon']:before, .admin-color-light #wpadminbar a.ab-item [class*=' stacked-rbm-logo-icon']:before {
+  color: #999; }
+
+.admin-color-light #wpadminbar a.ab-item [class^='stacked-rbm-logo-icon']:after, .admin-color-light #wpadminbar a.ab-item [class*=' stacked-rbm-logo-icon']:after, .admin-color-light #wpadminbar a.ab-item [class^='stacked-rbm-logo-icon'] span:after, .admin-color-light #wpadminbar a.ab-item [class*=' stacked-rbm-logo-icon'] span:after {
+  color: #999; }
+
+.admin-color-blue #wpadminbar a.ab-item [class^='stacked-rbm-logo-icon']:before, .admin-color-blue #wpadminbar a.ab-item [class*=' stacked-rbm-logo-icon']:before {
+  color: #e5f8ff; }
+
+.admin-color-blue #wpadminbar a.ab-item [class^='stacked-rbm-logo-icon']:after, .admin-color-blue #wpadminbar a.ab-item [class*=' stacked-rbm-logo-icon']:after, .admin-color-blue #wpadminbar a.ab-item [class^='stacked-rbm-logo-icon'] span:after, .admin-color-blue #wpadminbar a.ab-item [class*=' stacked-rbm-logo-icon'] span:after {
+  color: #e5f8ff; }
+
+.admin-color-coffee #wpadminbar a.ab-item [class^='stacked-rbm-logo-icon']:before, .admin-color-coffee #wpadminbar a.ab-item [class*=' stacked-rbm-logo-icon']:before {
+  color: #f3f2f1; }
+
+.admin-color-coffee #wpadminbar a.ab-item [class^='stacked-rbm-logo-icon']:after, .admin-color-coffee #wpadminbar a.ab-item [class*=' stacked-rbm-logo-icon']:after, .admin-color-coffee #wpadminbar a.ab-item [class^='stacked-rbm-logo-icon'] span:after, .admin-color-coffee #wpadminbar a.ab-item [class*=' stacked-rbm-logo-icon'] span:after {
+  color: #f3f2f1; }
+
+.admin-color-ectoplasm #wpadminbar a.ab-item [class^='stacked-rbm-logo-icon']:before, .admin-color-ectoplasm #wpadminbar a.ab-item [class*=' stacked-rbm-logo-icon']:before {
+  color: #ece6f6; }
+
+.admin-color-ectoplasm #wpadminbar a.ab-item [class^='stacked-rbm-logo-icon']:after, .admin-color-ectoplasm #wpadminbar a.ab-item [class*=' stacked-rbm-logo-icon']:after, .admin-color-ectoplasm #wpadminbar a.ab-item [class^='stacked-rbm-logo-icon'] span:after, .admin-color-ectoplasm #wpadminbar a.ab-item [class*=' stacked-rbm-logo-icon'] span:after {
+  color: #ece6f6; }
+
+.admin-color-midnight #wpadminbar a.ab-item [class^='stacked-rbm-logo-icon']:before, .admin-color-midnight #wpadminbar a.ab-item [class*=' stacked-rbm-logo-icon']:before {
+  color: #f1f2f3; }
+
+.admin-color-midnight #wpadminbar a.ab-item [class^='stacked-rbm-logo-icon']:after, .admin-color-midnight #wpadminbar a.ab-item [class*=' stacked-rbm-logo-icon']:after, .admin-color-midnight #wpadminbar a.ab-item [class^='stacked-rbm-logo-icon'] span:after, .admin-color-midnight #wpadminbar a.ab-item [class*=' stacked-rbm-logo-icon'] span:after {
+  color: #f1f2f3; }
+
+.admin-color-ocean #wpadminbar a.ab-item [class^='stacked-rbm-logo-icon']:before, .admin-color-ocean #wpadminbar a.ab-item [class*=' stacked-rbm-logo-icon']:before {
+  color: #f2fcff; }
+
+.admin-color-ocean #wpadminbar a.ab-item [class^='stacked-rbm-logo-icon']:after, .admin-color-ocean #wpadminbar a.ab-item [class*=' stacked-rbm-logo-icon']:after, .admin-color-ocean #wpadminbar a.ab-item [class^='stacked-rbm-logo-icon'] span:after, .admin-color-ocean #wpadminbar a.ab-item [class*=' stacked-rbm-logo-icon'] span:after {
+  color: #f2fcff; }
+
+.admin-color-sunrise #wpadminbar a.ab-item [class^='stacked-rbm-logo-icon']:before, .admin-color-sunrise #wpadminbar a.ab-item [class*=' stacked-rbm-logo-icon']:before {
+  color: #f3f1f1; }
+
+.admin-color-sunrise #wpadminbar a.ab-item [class^='stacked-rbm-logo-icon']:after, .admin-color-sunrise #wpadminbar a.ab-item [class*=' stacked-rbm-logo-icon']:after, .admin-color-sunrise #wpadminbar a.ab-item [class^='stacked-rbm-logo-icon'] span:after, .admin-color-sunrise #wpadminbar a.ab-item [class*=' stacked-rbm-logo-icon'] span:after {
+  color: #f3f1f1; }
 /*# sourceMappingURL=style.css.map */
