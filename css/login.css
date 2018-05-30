@@ -31,7 +31,7 @@ body.login {
       text-decoration: none;
       color: white; }
     body.login div#login h1 a {
-      background-image: url(http://realbigwebsites.com/wp-content/uploads/2013/06/Blue-Green-Logo.png);
+      background-image: url(https://realbigwebsites.com/wp-content/uploads/2013/06/Blue-Green-Logo.png);
       background-size: 59%;
       padding-bottom: 30px; }
   body.login .button-primary {
@@ -42,4 +42,5 @@ body.login {
     width: 230px;
     margin: 5px 0 0 0;
     background: #064374; }
+
 /*# sourceMappingURL=login.css.map */
